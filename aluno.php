@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="css/principal.css">
 </head>
 <body id="aluno">
+    <a href="index.php">Início</a>
+
     <h1>Cadastro dos Alunos</h1>
+    
     <form action="" method="post">
         <label for="matricula">Matrícula: </label>
         <input type="text" name="matricula" id="matricula" placeholder="Digite a matrícula">
