@@ -8,7 +8,7 @@
 <body>
     <img src="imagens/logosenacv2.png" alt="logo senac" width="200px" height="auto">
     <h1>Controle Acadêmico</h1>
-    <p>Bem-vindo ao <b>sistema de controle acadêmico</b>.</p> <p>Aqui, você poderá consultar suas notas.</p> <p>E também sua frequência.</p>
+    <p>Bem-vindo ao <b>sistema de controle acadêmico</b>.</p> <p>Aqui, você poderá consultar suas <a href="notas.php" alt="notas da turma" target="_self">notas</a>.</p> <p>E também sua <i><a href="frequencia.php" alt="frequencia dos alunos">frequência</a></i>.</p>
     <h2>Menu</h2>
     <ul>
         <li><a href="aluno.php">Alunos</a></li>
