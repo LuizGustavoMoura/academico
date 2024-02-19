@@ -19,7 +19,7 @@
         <input type="radio" name="genero" id="genero" value="Masculino">Masculino
         <input type="radio" name="genero" id="genero" value="Feminino">Feminino
 
-        <button type="submit" class="btn btn-primary btn-lg" value="Enviar"></button>
+        <button type="submit" class="btn btn-primary btn-lg" value="Enviar">Enviar</button>
     </form>
 </body>
 </html>
