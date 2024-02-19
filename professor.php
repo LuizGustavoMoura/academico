@@ -6,7 +6,7 @@
     <title>Controle Acadêmico</title>
     <link rel="stylesheet" href="css/principal.css">
 </head>
-<body>
+<body id="professor">
     <h1>Professores</h1>
     <table>
         <tr>
