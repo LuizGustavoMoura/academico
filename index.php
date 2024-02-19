@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Acadêmico</title>
+    <link rel="stylesheet" href="css/principal.css">
 </head>
 <body>
     <img src="imagens/logosenacv2.png" alt="logo senac" width="200px" height="auto">
