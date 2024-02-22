@@ -44,3 +44,18 @@ function testaform() {
         alert("Nome do aluno digitado");
     }
 }
+
+function testasenha() {
+    var p1=document.forms["formsenha"]["senha"].value;
+    var p2=document.forms["formsenha"]["confirmasenha"].value;
+
+    if (p1.length < 6) {
+        alert("Senha muito pequena. Digite pelo menos 6 caracteres.");
+        return false;
+    }
+    
+    if (p1 != p2) {
+        alert("Senhas diferentes. Tente de novo.");
+        return false;
+    }
+}
