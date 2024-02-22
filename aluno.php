@@ -19,7 +19,7 @@
         </p>
         <p>
             <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" placeholder="Digite o nome do aluno">
+            <input type="text" name="nome" id="nome" placeholder="Digite o nome do(a) aluno(a)">
         </p>
         <p>
             <label for="datanascimento">Data de Nascimento: </label>
