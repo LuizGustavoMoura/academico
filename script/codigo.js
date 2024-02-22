@@ -18,3 +18,12 @@ function resultado(form) {
         alert("Reprovado com a média " + media);
     }
 }
+
+function justificafalta(form) {
+    var jf = confirm("Justifica Falta do(a) " + form.nomealuno.value + " ?");
+    if (jf == true) {
+        var textojf = prompt("Digite a justificativa.");
+    } else {
+        alert("Falta não justificada");
+    }
+}
