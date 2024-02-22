@@ -35,7 +35,7 @@ function testaform() {
     if (m==null || m=="") {
         alert("O número da matrícula precisa ser informado");
     } else {
-        alert("Matrícula digitada");
+        alert("Número da matrícula digitado");
     }
     
     if (n==null || n=="") {
