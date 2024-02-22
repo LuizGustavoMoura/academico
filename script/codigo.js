@@ -27,3 +27,20 @@ function justificafalta(form) {
         alert("Falta não justificada");
     }
 }
+
+function testaform() {
+    var n=document.forms["formalunos"]["nomealuno"].value;
+    var m=document.forms["formalunos"]["matricula"].value;
+
+    if (m==null || m=="") {
+        alert("O número da matrícula precisa ser informado");
+    } else {
+        alert("Matrícula digitada");
+    }
+    
+    if (n==null || n=="") {
+        alert("O nome do aluno precisa ser informado");
+    } else {
+        alert("Nome do aluno digitado");
+    }
+}

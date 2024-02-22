@@ -12,7 +12,7 @@
 
     <h1>Frequência do Aluno</h1>
     
-    <form action="" method="post">
+    <form name="formalunos" action="" method="post">
         <p>
             <label for="matricula">Matrícula: </label>
             <input type="text" name="matricula" id="matricula" placeholder="Digite a matrícula">
@@ -27,6 +27,7 @@
         </p>
 
         <button type="button" name="button" onclick="justificafalta(this.form)">Justificar Falta</button>
+        <button type="button" onclick="testaform(this.form)">Testar Dados</button>
     </form>
 </body>
 </html>
