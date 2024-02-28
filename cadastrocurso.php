@@ -10,10 +10,17 @@
     <p>Prezado(a) aluno(a), preencha com seus dados: </p>
 
     <form action="salvarcurso.php" method="post">
-        <label for="aluno">Nome: </label>
-        <input type="text" name="aluno" id="aluno">
-        <label for="curso">Curso: </label>
-        <input type="text" name="curso" id="curso">
+        <p>
+            <label for="aluno">Nome: </label>
+            <input type="text" name="aluno" id="aluno">
+        </p>
+        <p>
+            <label for="curso">Selecione o curso: </label>
+            <input type="radio" name="curso" id="curso" value="m"> Manutenção de Computadores
+            <input type="radio" name="curso" id="curso" value="r"> Redes de Computadores
+            <input type="radio" name="curso" id="curso" value="p"> Programação de Computadores
+            <input type="radio" name="curso" id="curso" value="w"> Programação Web
+        </p>
 
         <input type="reset" value="Limpar">
         <input type="submit" value="Enviar">
