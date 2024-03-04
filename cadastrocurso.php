@@ -9,10 +9,10 @@
     <h1>Cadastro de Curso</h1>
     <p>Prezado(a) aluno(a), preencha com seus dados: </p>
 
-    <form action="salvarcurso.php" method="post">
+    <form action="cadastromatricula.php.php" method="post">
         <p>
             <label for="aluno">Nome: </label>
-            <input type="text" name="aluno" id="aluno">
+            <input type="text" name="aluno" id="aluno" placeholder="Digite o seu nome">
         </p>
         <p>
             <label for="curso">Selecione o curso: </label>
