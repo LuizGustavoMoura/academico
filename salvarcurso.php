@@ -60,7 +60,7 @@
     // echo strlen($x);
     echo ucfirst($x);
 
-    $texto = 'Sistema Acadêmico: divulgação de notahrjkik dos alunos';
+    $texto = 'Sistema Acadêmico: divulgação de nota dos alunos';
     echo $texto;
     echo str_replace('nota', 'média', $texto);
 
