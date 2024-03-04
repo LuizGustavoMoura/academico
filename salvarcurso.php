@@ -60,19 +60,19 @@
     // echo strlen($x);
     echo ucfirst($x);
 
-    $texto = 'Sistema acadêmico: divulgação de nota dos alunos';
+    $texto = 'Sistema Acadêmico: divulgação de nota dos alunos';
     echo $texto;
     echo str_replace('nota', 'média', $texto);
 
 
-    function imprimirMedia($prova1,$prova2){
-        $media = ($prova1+$prova2)/2;
+    function imprimirMedia($prova1, $prova2){
+        $media = ($prova1 + $prova2)/2;
         echo 'A média do aluno é: '.$media;
     }
 
-    imprimirMedia(7.0,8.0);
+    imprimirMedia(7.0, 8.0);
 
-    imprimirMedia(10,7);
+    imprimirMedia(10, 7);
     ?>
 </body>
 </html>
