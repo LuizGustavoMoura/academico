@@ -6,7 +6,7 @@
     <title>Cálculo das Médias</title>
 </head>
 <body>
-<form action="media.php" method="post">
+    <form action="media.php" method="post">
         <p>
             <label for="nome">Nome do aluno: </label>
             <input type="text" name="nome" id="nome">
