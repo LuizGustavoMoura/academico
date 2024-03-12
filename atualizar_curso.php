@@ -1,32 +1,32 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['id'], $_POST['nome'], $_POST['curso'])) {
-        $id = $_POST['id'];
-        $nome = $_POST['nome'];
-        $curso = $_POST['curso'];
-    
-
-        //Conexão com o bando de dados
-        require('script/conexao.php');
-
-        //Atualize o curso no banco de dados
-        $sql = "UPDATE matricula SET nome='$nome', curso='$curso' WHERE id=$id";
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (isset($_POST['id'], $_POST['nome'], $_POST['curso'])) {
+            $id = $_POST['id'];
+            $nome = $_POST['nome'];
+            $curso = $_POST['curso'];
         
-        $resultado = mysqli_query($conexao, $sql);
-        if ($resultado) {
-            echo "Curso atualizado com sucesso!";
-            header("Location:cadastrocurso.php");
-        } else {
-            echo "Erro ao atualizar o curso" . mysqli_error($conexao);
-        }
 
-        mysqli_close($conexao);
+            //Conexão com o bando de dados
+            require('script/conexao.php');
+
+            //Atualize o curso no banco de dados
+            $sql = "UPDATE matricula SET nome='$nome', curso='$curso' WHERE id=$id";
+            
+            $resultado = mysqli_query($conexao, $sql);
+            if ($resultado) {
+                echo "Curso atualizado com sucesso!";
+                header("Location:cadastrocurso.php");
+            } else {
+                echo "Erro ao atualizar o curso" . mysqli_error($conexao);
+            }
+
+            mysqli_close($conexao);
+        } else {
+            echo "Preencha os dados";
+        }
+        
     } else {
-        echo "Preencha os dados";
+        header("Location:cadastrocurso.php");
+        exit;
     }
-    
-} else {
-    header("Location:cadastrocurso.php");
-    exit;
-}
 ?>
