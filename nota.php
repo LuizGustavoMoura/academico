@@ -7,6 +7,10 @@
 </head>
 <body>
     <form action="media.php" method="post">
+        <a href="index.php">Início</a>
+
+        <h1>Nota do Aluno</h1>
+
         <p>
             <label for="nome">Nome do aluno: </label>
             <input type="text" name="nome" id="nome">
