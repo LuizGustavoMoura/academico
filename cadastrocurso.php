@@ -37,45 +37,45 @@
 
         <tbody>
             <?php
-            require('script/conexao.php');
-            
-            $sql = "SELECT * FROM matricula";
-            $resultado = mysqli_query($conexao, $sql);
+                require('script/conexao.php');
+                
+                $sql = "SELECT * FROM matricula";
+                $resultado = mysqli_query($conexao, $sql);
 
-            while ($row = mysqli_fetch_assoc($resultado)) {
-                echo "<tr>";
-                    echo "<td>".$row['nome']."</td>";
-                    echo "<td>";
-                        switch ($row['curso']) {
-                            case "m":
-                                echo "Manutenção de Computadores";
-                                break;
-                            
-                            case "r":
-                                echo "Redes de Computadores";
-                                break;
-                            
-                            case "p":
-                                echo "Programação de Computadores";
-                                break;
-                            
-                            case "w":
-                                echo "Programação Web";
-                                break;
-                            
-                            default:
-                                echo "Por favor, preencha os dados";
-                                break;
-                        }
-                    echo "</td>";
-                    echo "<td>";
-                        echo "<a href='editar_curso.php?id=".$row['id']."'>Editar</a>";
-                        echo "<a href='excluir_curso.php?id=".$row['id']."'>Excluir</a>";
-                    echo "</td>";
-                echo "</tr>";
-            }
+                while ($row = mysqli_fetch_assoc($resultado)) {
+                    echo "<tr>";
+                        echo "<td>".$row['nome']."</td>";
+                        echo "<td>";
+                            switch ($row['curso']) {
+                                case "m":
+                                    echo "Manutenção de Computadores";
+                                    break;
+                                
+                                case "r":
+                                    echo "Redes de Computadores";
+                                    break;
+                                
+                                case "p":
+                                    echo "Programação de Computadores";
+                                    break;
+                                
+                                case "w":
+                                    echo "Programação Web";
+                                    break;
+                                
+                                default:
+                                    echo "Por favor, preencha os dados";
+                                    break;
+                            }
+                        echo "</td>";
+                        echo "<td>";
+                            echo "<a href='editar_curso.php?id=".$row['id']."'>Editar</a>";
+                            echo "<a href='excluir_curso.php?id=".$row['id']."'>Excluir</a>";
+                        echo "</td>";
+                    echo "</tr>";
+                }
 
-            mysqli_close($conexao);
+                mysqli_close($conexao);
             ?>
         </tbody>
     </table>
