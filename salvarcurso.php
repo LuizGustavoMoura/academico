@@ -7,72 +7,72 @@
 </head>
 <body>
     <?php
-    $nome = $_POST['aluno'];
-    $curso = $_POST['curso'];
+        $nome = $_POST['aluno'];
+        $curso = $_POST['curso'];
 
-    echo '<h2>'.'Confira os dados'.'</h2>';
+        echo '<h2>'.'Confira os dados'.'</h2>';
 
-    echo '<p>'.$nome.'</p>';
+        echo '<p>'.$nome.'</p>';
 
-    switch ($curso) {
-        case 'm':
-            echo '<p>'.'Manutenção de Computadores'.'</p>';
-            break;
-        case 'r':
-            echo '<p>'.'Redes de Computadores'.'</p>';
-            break;
-        case 'p':
-            echo '<p>'.'Programação de Computadores'.'</p>';
-            break;
-        case 'w':
-            echo '<p>'.'Programação Web'.'</p>';
-            break;
-        
-        default:
-            echo '<p>'.'Digite um código válido (m, r, p ou w)'.'</p>';
-            break;
-    }
+        switch ($curso) {
+            case 'm':
+                echo '<p>'.'Manutenção de Computadores'.'</p>';
+                break;
+            case 'r':
+                echo '<p>'.'Redes de Computadores'.'</p>';
+                break;
+            case 'p':
+                echo '<p>'.'Programação de Computadores'.'</p>';
+                break;
+            case 'w':
+                echo '<p>'.'Programação Web'.'</p>';
+                break;
+            
+            default:
+                echo '<p>'.'Digite um código válido (m, r, p ou w)'.'</p>';
+                break;
+        }
 
-    //vetor
-    //matriz
-    //$grupo = array("Álvaro", "Kelly", "Letícia", "Rodrigo");
-    //$i = 0;
+        //vetor
+        //matriz
+        //$grupo = array("Álvaro", "Kelly", "Letícia", "Rodrigo");
+        //$i = 0;
 
-    //do {
-        //$aluno = $grupo[$i];
-        //echo $aluno.'<br>';
-        //$i++;
-    //} while ($i < count($grupo));
+        //do {
+            //$aluno = $grupo[$i];
+            //echo $aluno.'<br>';
+            //$i++;
+        //} while ($i < count($grupo));
 
-    $grupo = array("Álvaro", "Kelly", "Letícia", "Rodrigo");
+        $grupo = array("Álvaro", "Kelly", "Letícia", "Rodrigo");
 
-    for ($i=0; $i < count($grupo); $i++) { 
-        $aluno = $grupo[$i];
-        echo $aluno.'<br>';
-    }
+        for ($i=0; $i < count($grupo); $i++) { 
+            $aluno = $grupo[$i];
+            echo $aluno.'<br>';
+        }
 
-    $disciplinas = array("Redes de Computadores", "Algorítmos", "Programação de Computadores", "Manutenção de Computadores");
-    foreach ($disciplinas as $materias) {
-        echo '<p>'.$materias.'</p>';
-    }
+        $disciplinas = array("Redes de Computadores", "Algorítmos", "Programação de Computadores", "Manutenção de Computadores");
+        foreach ($disciplinas as $materias) {
+            echo '<p>'.$materias.'</p>';
+        }
 
-    $x = 'sistema acadêmico';
-    // echo strlen($x);
-    echo ucfirst($x);
+        $x = 'sistema acadêmico';
+        // echo strlen($x);
+        echo ucfirst($x);
 
-    $texto = 'Sistema Acadêmico: divulgação de nota dos alunos';
-    echo $texto;
-    echo str_replace('nota', 'média', $texto);
+        $texto = 'Sistema Acadêmico: divulgação de nota dos alunos';
+        echo $texto;
+        echo str_replace('nota', 'média', $texto);
 
 
-    function imprimirMedia($prova1, $prova2){
-        $media = ($prova1 + $prova2)/2;
-        echo 'A média do aluno é: '.$media;
-    }
+        function imprimirMedia($prova1, $prova2){
+            $media = ($prova1 + $prova2)/2;
+            echo 'A média do aluno é: '.$media;
+        }
 
-    imprimirMedia(7.0, 8.0);
+        imprimirMedia(7.0, 8.0);
 
-    imprimirMedia(10, 7);
+        imprimirMedia(10, 7);
     ?>
 </body>
 </html>
