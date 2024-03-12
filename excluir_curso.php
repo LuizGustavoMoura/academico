@@ -5,7 +5,7 @@ if (isset($_GET['id'])) {
     require ('script/conexao.php');
     
     //Deletar o curso
-    $sql = "DELETE * FROM matricula WHERE id = $id";
+    $sql = "DELETE FROM matricula WHERE id = $id";
     $resultado = mysqli_query($conexao, $sql);
     
     if ($resultado) {
