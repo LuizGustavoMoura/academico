@@ -3,10 +3,10 @@
     // $username = 'root';
     // $password = '';
     // $database = 'cafeteria';
-    // $port = '3307';
+    // $port = '3306';
 
     // Tente estabelecer a conexão
-    $conexao = mysqli_connect("localhost", "root", "", "academico", "3307");
+    $conexao = mysqli_connect("localhost", "root", "", "academico", "3306");
 
     // Verifique se a conexão foi bem-sucedida
     if (!$conexao) {
