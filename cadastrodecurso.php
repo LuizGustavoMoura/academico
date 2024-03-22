@@ -53,7 +53,7 @@
                 <select name="modalidade" id="select">
                     <option value="">Selecione a modalidade do curso</option>
                     <option value="presencial">Presencial</option>
-                    <option value="adistancia">Educação à distância (EAD)</option>
+                    <option value="ead">Educação à distância (EAD)</option>
                 </select>
             </p>
         </form>
