@@ -13,7 +13,7 @@
 
     require('script/conexao.php');
 
-    $sql = "INSERT INTO aluno (nome, cpf, endereco, complemento, cep, bairro, cidade, estado, telefone, formacao, titulacao) VALUES ('$nome', '$cpf', '$endereco', '$complemento', '$cep', '$bairro', '$cidade', '$estado', '$telefone', '$formacao', '$titulacao')";
+    $sql = "INSERT INTO professor (nome, cpf, endereco, complemento, cep, bairro, cidade, estado, telefone, formacao, titulacao) VALUES ('$nome', '$cpf', '$endereco', '$complemento', '$cep', '$bairro', '$cidade', '$estado', '$telefone', '$formacao', '$titulacao')";
 
     if (mysqli_query($conexao, $sql)) {
         echo "Registro inserido com sucesso";
