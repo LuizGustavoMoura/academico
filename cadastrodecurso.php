@@ -39,7 +39,7 @@
             </p>
             <p>
                 <label for="nivel">Nível:</label>
-                <select name="nivel" id="select">
+                <select name="nivel" id="nivel">
                     <option value="">Selecione o nível do curso</option>
                     <option value="tecnico">Técnico</option>
                     <option value="tecnologo">Tecnólogo</option>
@@ -50,7 +50,7 @@
             </p>
             <p>
                 <label for="modalidade">Modalidade:</label>
-                <select name="modalidade" id="select">
+                <select name="modalidade" id="modalidade">
                     <option value="">Selecione a modalidade do curso</option>
                     <option value="presencial">Presencial</option>
                     <option value="ead">Educação à distância (EAD)</option>
