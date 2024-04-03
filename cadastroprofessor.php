@@ -78,27 +78,29 @@
                     <label for="telefone">Telefone: </label>
                     <input type="tel" name="telefone" id="telefone">
                 </p>
-        </fieldset>
-        <fieldset>
-            <legend>Informações Acadêmicas</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>Informações Acadêmicas</legend>
 
-            <p>
-                <label for="formacao">Formação Acadêmica</label>
-                <input type="text" name="formacao" id="formacao">
-            </p>
-            <p>
-                <label for="titulacao">Titulação</label>
-                <select name="titulacao" id="titulacao">
-                    <option value="">Selecione a titulação</option>
-                    <option value="graduacao">Graduação</option>
-                    <option value="mestrado">Mestrado</option>
-                    <option value="doutorado">Doutorado</option>
-                </select>
-            </p>
+                    <p>
+                        <label for="formacao">Formação Acadêmica</label>
+                        <input type="text" name="formacao" id="formacao">
+                    </p>
+                    <p>
+                        <label for="titulacao">Titulação</label>
+                        <select name="titulacao" id="titulacao">
+                            <option value="">Selecione a titulação</option>
+                            <option value="graduacao">Graduação</option>
+                            <option value="mestrado">Mestrado</option>
+                            <option value="doutorado">Doutorado</option>
+                        </select>
+                    </p>
+                    </fieldset>
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </fieldset>
-        </form>
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+            </form>
     </body>
 </html>
