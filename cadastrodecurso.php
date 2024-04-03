@@ -56,8 +56,13 @@
                     <option value="ead">Educação à distância (EAD)</option>
                 </select>
             </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
         </form>
-    </fieldset>
 </body>
 
 </html>
