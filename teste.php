@@ -1,61 +1,39 @@
-<!-- <?php
-//Verificar se o id esá selecionado
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
+<p>Selecione o aluno e o curso: </p>
+<fieldset><legend> Matrícula</legend>
+<form method=”post” action=”cadastro_matricula.php”>
+<label for=”aluno”>Selecione o aluno(a):</label>
 
-    //Abrir a conexão
-    require('script/conexao.php');
-    
-    $sql = "SELECT * FROM matricula WHERE id = $id";
-    $resultado = mysqli_query($conexao, $sql);
-
-    //Verificar se existe id
-    if (mysqli_num_rows($resultado) == 1) {
-        $curso = mysqli_fetch_assoc($resultado);
-    } else {
-        //Deu erro. Volta para a lista dos cursos.
-        header('Location: cadastrocurso.php');
-        exit;
-    }
-
-    mysqli_close($conexao);
-} else {
-    //Não achou o id e termina o código
-    header('Location: cadastrocurso.php');
-    exit;
+<select name=”aluno” id=”select”>
+<?php
+require(“conexao.php”);
+mysql_select_db(“sis_academico”);
+$consulta=mysql_query(“SELECT cpf, nome FROM
+aluno”);
+while ($dados = mysql_fetch_array($consulta)) {
+echo(“<option
+value='”.$dados['cpf'].”'>”.$dados['
+nome'].”</option>”);
 }
 ?>
+</select>
+<br />
+<label for=”curso”>Selecione o curso:</label>
+<select name=”curso” id=”select”>
+<?php
+require(“conexao.php”);
+mysql_select_db(“sis_academico”);
+$consulta=mysql_query(“SELECT id_curso, nome FROM
+curso”);
+while ($dados = mysql_fetch_array($consulta)) {
+echo(“<option value='”.$dados['id_
+curso'].”'>”.$dados['nome'].”</option>”);
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Acadêmico</title>
-</head>
-<body>
-    <h2>Editar Curso</h2>
+}
 
-    <form action="atualizar_curso.php" method="post">
-        <p><input type="hidden" name="id" id="id" value="<?php echo $curso['id']; ?>"></p>
-        <p>
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" value="<?php echo $curso['nome']; ?>">
-        </p>
-        <p>
-            <label for="curso">Curso: </label>
-            <input type="radio" name="curso" id="curso_m" value="m" <?php echo $curso['curso'] == 'm' ? 'checked' : '' ; ?>>
-            <label for="curso_m">Manutenção de computadores</label>
-            <input type="radio" name="curso" id="curso_r" value="r" <?php echo $curso['curso'] == 'r' ? 'checked' : '' ; ?>>
-            <label for="curso_r">Redes de computadores</label>
-            <input type="radio" name="curso" id="curso_p" value="p" <?php echo $curso['curso'] == 'p' ? 'checked' : '' ; ?>>
-            <label for="curso_p">Programação de Computadores</label>
-            <input type="radio" name="curso" id="curso_w" value="w" <?php echo $curso['curso'] == 'w' ? 'checked' : '' ; ?>>
-            <label for="curso_w">Programação Web</label>
-        </p>
-
-        <p><input type="submit" value="Atualizar"></p>
-        <p><a href="cadastrocurso.php">Voltar</a></p>
-    </form>
-</body>
-</html> -->
+?>
+</select>
+<br /> <br />
+<input type=”reset” value=”Limpar” name=”limpar” >
+<input type=”submit” value=”Enviar” name=”submit” />
+</form>
+</fieldset>
