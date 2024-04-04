@@ -36,4 +36,4 @@ curso'].”'>”.$dados['nome'].”</option>”);
 <input type=”reset” value=”Limpar” name=”limpar” >
 <input type=”submit” value=”Enviar” name=”submit” />
 </form>
-</fieldset>gnbn
+</fieldset>
