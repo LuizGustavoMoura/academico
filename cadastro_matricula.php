@@ -13,4 +13,4 @@
     }
 
     header('Location: cadastromatricula.php');
-?>gnytjyumy
+?>gnytjyumybb
