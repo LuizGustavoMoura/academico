@@ -19,4 +19,4 @@ if (mysqli_query($conexao, $sql)) {
 header("location:cadastrodecurso.php");
 
 
-?>ncu4tghuith
+?>
