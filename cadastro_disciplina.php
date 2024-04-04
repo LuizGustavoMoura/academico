@@ -18,4 +18,4 @@ if (mysqli_query($conexao, $sql)) {
 header("location:cadastrodisciplina.php");
 
 
-?>
+?>hutvgu
