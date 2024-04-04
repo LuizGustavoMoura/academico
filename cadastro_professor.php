@@ -24,4 +24,4 @@
     mysqli_close($conexao);
 
     header('Location: cadastroprofessor.php');
-?>fbrnbyubh
+?>
