@@ -8,10 +8,10 @@
 </head>
 
 <body>
-    <p>Preencher os dados do curso(a):</p>
+    <p>Preencher os dados da disciplina:</p>
 
     <fieldset>
-        <legend>Cadastro de Curso(a)</legend>
+        <legend>Cadastro da Disciplina</legend>
 
         <form action="cadastro_disciplina.php" method="post">
             <p>
