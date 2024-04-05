@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <p>Preencher os dados da turma:</p>
+        <p>Cadastre a Disciplina no Curso:</p>
 
         <fieldset>
             <legend>Cadastro de Disciplina nos Cursos</legend>
