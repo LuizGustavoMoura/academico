@@ -95,12 +95,12 @@
                             <option value="doutorado">Doutorado</option>
                         </select>
                     </p>
-                    </fieldset>
+                </fieldset>
 
-                    <p>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
-                    </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
             </form>
     </body>
 </html>
