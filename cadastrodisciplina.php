@@ -14,19 +14,19 @@
 
             <form action="cadastro_disciplina.php" method="post">
                 <p>
-                    <label for="nome">Nome: </label>
+                    <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="nome">
                 </p>
                 <p>
-                    <label for="carga">Carga Horária: </label>
-                    <input type="number" name="carga" id="carga">
+                    <label for="carga">Carga Horária:</label>
+                    <input type="number" name="carga" id="carga" min="0" max="1000">
                 </p>
                 <p>
-                    <label for="creditos">Créditos: </label>
+                    <label for="creditos">Créditos:</label>
                     <input type="number" name="creditos" id="creditos">
                 </p>
                 <p>
-                    <label for="ementa">Ementa: </label>
+                    <label for="ementa">Ementa:</label>
                     <textarea name="ementa" id="ementa" cols="40" rows="6"></textarea>
                 </p>
                 </fieldset>
