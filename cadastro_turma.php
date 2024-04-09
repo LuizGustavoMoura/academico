@@ -14,5 +14,5 @@
 
     mysqli_close($conexao);
 
-    // header('Location: cadastroturma.php');
+    header('Location: cadastroturma.php');
 ?>
