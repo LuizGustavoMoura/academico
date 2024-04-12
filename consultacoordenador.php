@@ -8,7 +8,7 @@
 
     <body>
         <fieldset>
-            <legend>Consulta de coordenador</legend>
+            <legend>Consulta de Coordenador</legend>
 
             <form action="consulta_coordenador.php" method="post">
                 <p>
@@ -16,7 +16,7 @@
                     <select name="curso" id="curso">
                         <?php
                             require ('script/conexao.php');
-                            $sql = "SELECT coordenador,nome FROM curso";
+                            $sql = "SELECT coordenador, nome FROM curso";
                             $resultado = mysqli_query($conexao, $sql);
                             while ($row = mysqli_fetch_assoc($resultado)) {
                                 echo "<option value='{$row['coordenador']}'>{$row['nome']}</option>";
@@ -25,7 +25,7 @@
                     </select>
                 </p>
                 </fieldset>
-                
+
                 <p> 
                 <input type="reset" value="Limpar">
                 <input type="submit" value="Enviar">
