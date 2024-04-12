@@ -14,7 +14,7 @@
     if ($totalalunos <= $limitealuno) {
         echo "A turma atingiu o limite máximo";
     } else {
-        $sql = "INSERT INTO alunoturma (idmatricula,idturma) VALUES ('$idmatricula','$idturma')";
+        $sql = "INSERT INTO aluno_turma (idmatricula,idturma) VALUES ('$idmatricula','$idturma')";
     
         if (mysqli_query($conexao, $sql)) {
             echo 'registro cadastrado com sucesso';

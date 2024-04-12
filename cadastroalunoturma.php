@@ -31,7 +31,7 @@
                     <select name="turma" id="turma">
                         <?php
                             require ('script/conexao.php');
-                            $sql = "SELECT turma.id AS turma, turma.iddisciplina, disciplina.nome As dnome, turma.idprofessor, professor.nome AS pnome  FROM turma INNER JOIN (disciplina,professor) ON turma.iddisciplina = disciplina.id AND turma.idprofessor = professor.cpf";
+                            $sql = "SELECT turma.id AS turma, turma.iddisciplina, disciplina.id, disciplina.nome As dnome, turma.idprofessor, professor.nome AS pnome FROM turma INNER JOIN (disciplina,professor) ON turma.iddisciplina = disciplina.id AND turma.idprofessor = professor.cpf";
                             $resultado = mysqli_query($conexao, $sql);
                             while ($row = mysqli_fetch_assoc($resultado)) {
                                 echo "<option value='{$row['turma']}'>{$row['dnome']} professor(a){$row['pnome']}</option>";
