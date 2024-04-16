@@ -12,5 +12,5 @@
         echo "Erro ao inserir registro: ".mysqli_error($conexao);
     }
 
-    header('Location: cadastromatricula.php');
+    // header('Location: cadastromatricula.php');
 ?>
